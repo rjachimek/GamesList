@@ -1,0 +1,66 @@
+﻿@model GamesList.Models.GamesModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GamesModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GameStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GameStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PremiereDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PremiereDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DeveloperID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DeveloperID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hltb)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hltb)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hltb100)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hltb100)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

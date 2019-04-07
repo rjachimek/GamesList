@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <connetionString>Data Source=.\SQLEXPRESS01;Initial Catalog=Games4;Integrated Security=True</connetionString>
+</root>
